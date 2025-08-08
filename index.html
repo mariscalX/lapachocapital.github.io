@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lapacho Capital LLC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 100px;
+    }
+
+    header h1 {
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1.1em;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #003366;
+      text-align: left;
+    }
+
+    img.featured {
+      width: 100%;
+      max-width: 960px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    form {
+      background-color: #003366;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      display: block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 200px;
+      margin: 0 auto;
+      display: block;
+      padding: 10px;
+      background-color: #fff;
+      color: #003366;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .success-message {
+      display: none;
+      color: #00ff99;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #003366;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Lapacho Capital Logo" />
+    <h1>Lapacho Capital LLC</h1>
+    <p>Strategic Investment Partners</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Lapacho Capital LLC is a dynamic investment and consulting firm providing comprehensive financial and strategic advisory services. Our core mission is to generate value for clients and stakeholders through high-impact, data-driven, and ethically-grounded solutions in real estate and capital markets. We work with private and institutional clients, combining financial acumen with local insight to unlock long-term growth across North and Latin America.
+      </p>
+      <p>
+        In the realm of real estate, we specialize in identifying and co-developing luxury residential and commercial properties. Our development division partners with architects, engineers, landowners, and government agencies to deliver projects that balance sustainability, design excellence, and financial profitability. We work from feasibility studies and land acquisition to construction, marketing, and asset management, offering full-cycle solutions for complex undertakings.
+      </p>
+      <p>
+        Lapacho Capital’s financial advisory practice provides tailored investment consulting across asset classes including equities, bonds, structured products, and alternatives. We build strategic portfolios designed to meet diverse client needs—from capital preservation and income generation to aggressive growth and tactical opportunities.
+      </p>
+      <p>
+        Our professionals bring experience from leading global banks, hedge funds, and advisory firms. We support clients through services such as:
+        <ul>
+          <li>Asset Allocation & Portfolio Construction</li>
+          <li>Capital Raising & Private Placements</li>
+          <li>Wealth Structuring & Tax Optimization</li>
+          <li>Corporate Finance & Valuation Advisory</li>
+          <li>Risk Management & Compliance Advisory</li>
+        </ul>
+      </p>
+      <p>
+        Our investment philosophy combines deep fundamental analysis, macroeconomic research, and rigorous due diligence. We employ both quantitative and qualitative methodologies to assess market opportunities and mitigate risks. Each project or portfolio recommendation is accompanied by detailed scenario modeling and ongoing monitoring.
+      </p>
+      <img src="stocks.jpg" alt="Financial Markets" class="featured" />
+      <p>
+        ESG (Environmental, Social, and Governance) factors are embedded in our decision-making framework. We actively seek to partner with entities committed to transparency, environmental stewardship, and community engagement.
+      </p>
+      <p>
+        Our clients include family offices, private equity firms, sovereign investors, pension funds, and international developers. Lapacho Capital offers discretion and confidentiality in every engagement, underpinned by a commitment to integrity and accountability.
+      </p>
+      <p>
+        With bilingual capabilities and cross-border expertise, we are uniquely positioned to bridge investment capital between U.S. and Latin American markets. We assist U.S. clients in accessing emerging markets, and help Latin American capital navigate U.S. real estate and public equities with confidence and compliance.
+      </p>
+      <img src="mansion.jpg" alt="Luxury Mansion Project" class="featured" />
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you'd like to get in touch, please complete the form below.</p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+        <div class="success-message" id="successMsg">Thank you for your message. We'll be in touch shortly.</div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Lapacho Capital LLC. All rights reserved.
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      successMsg.style.display = 'block';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
