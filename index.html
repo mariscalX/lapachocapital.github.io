@@ -110,21 +110,28 @@
       text-align: center;
       padding: 20px;
     }
-    .btn-whatsapp {
-    position: fixed;
-    bottom: 20px;   /* distancia desde abajo */
-    right: 20px;    /* distancia desde la derecha */
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,.3);
-    z-index: 9999;
-    cursor: pointer;
-}
+  .btn-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+      z-index: 9999;
+      cursor: pointer;
+  }
+
+  /* Acá forzamos el tamaño del ícono sí o sí */
+  .btn-whatsapp img {
+      width: 40px !important;
+      height: 40px !important;
+      object-fit: contain;
+      display: block;
   </style>
 </head>
 <body>
@@ -207,5 +214,6 @@
 </a>  
 </body>
 </html>
+
 
 
